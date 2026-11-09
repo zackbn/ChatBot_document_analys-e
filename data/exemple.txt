@@ -1,0 +1,15 @@
+Introduction au Machine Learning
+
+Le Machine Learning, ou apprentissage automatique, est une branche de l'intelligence artificielle. Il permet à un ordinateur d'apprendre à partir de données, sans être programmé explicitement pour chaque tâche. Au lieu d'écrire des règles à la main, on fournit des exemples au modèle et il découvre lui-même les régularités.
+
+On distingue trois grandes familles d'apprentissage. L'apprentissage supervisé utilise des données étiquetées, c'est-à-dire des exemples dont on connaît déjà la bonne réponse. L'apprentissage non supervisé travaille sur des données sans étiquettes et cherche des groupes ou des structures cachées. L'apprentissage par renforcement entraîne un agent qui apprend par essais et erreurs grâce à des récompenses.
+
+En apprentissage supervisé, la régression sert à prédire une valeur numérique, comme le prix d'une maison. La classification sert à prédire une catégorie, comme savoir si un email est un spam ou non. Parmi les algorithmes de classification les plus connus, on trouve les k plus proches voisins, les arbres de décision, les forêts aléatoires et les machines à vecteurs de support.
+
+Le clustering est la tâche principale de l'apprentissage non supervisé. L'algorithme K-Means regroupe les données en k clusters autour de centres appelés centroïdes. Le nombre de clusters se choisit souvent avec la méthode du coude, qui observe comment l'inertie diminue quand k augmente. DBSCAN est une autre méthode qui forme des groupes selon la densité des points et qui détecte les points isolés.
+
+Pour évaluer un modèle, on sépare les données en un jeu d'entraînement et un jeu de test. Le modèle apprend sur le jeu d'entraînement et il est évalué sur le jeu de test, qu'il n'a jamais vu. Pour la classification, on utilise l'accuracy, la précision, le rappel et la matrice de confusion. Pour la régression, on utilise la MAE, la RMSE et le coefficient R².
+
+Le surapprentissage, ou overfitting, se produit quand un modèle apprend trop bien les données d'entraînement, y compris leur bruit. Il obtient alors de très bons résultats sur l'entraînement mais de mauvais résultats sur de nouvelles données. Pour l'éviter, on peut simplifier le modèle, ajouter des données ou utiliser la validation croisée.
+
+Le Deep Learning est une sous-partie du Machine Learning qui utilise des réseaux de neurones à plusieurs couches. Il est particulièrement efficace pour les images, le son et le texte. Les bibliothèques les plus utilisées sont PyTorch et TensorFlow.
